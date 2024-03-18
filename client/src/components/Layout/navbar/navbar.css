@@ -1,0 +1,110 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 50px;
+    z-index: 2;
+    border-top: 2px solid rgba(225, 225, 225, 0.3);
+    border-left: 2px solid rgba(225, 225, 225, 0.1);
+    border-right: 1px solid rgba(225, 225, 225, 0.2);
+    border-bottom: 1.5px solid rgba(225, 225, 225, 0.1);
+    align-content: center;
+    height: fit-content;
+    color: white;
+    width: 600px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+.navbar .links {
+    padding-right:20px ;
+    display: flex;
+    font-family: "Just sans";
+    font-weight: 5px;
+    font-size: 15px;
+}
+
+
+.logo{
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.toggleButton {
+    background-color: rgba(0, 0, 0, 0);
+    right: 0;
+    position: fixed;
+    margin-top: 20px;
+    float: right;
+    display: flex;
+    align-items: center;
+    scale: 50%;
+    display: none;
+    border: 0;
+    transition: transform .4s ease;
+    z-index: 100;
+}
+
+.toggleButton.open {
+    transform: translate(-120px,0);
+}
+
+.dropdown_menu {
+    padding-top: 1rem;
+    display: none;
+    position: fixed;
+    color: white;
+    right: 0;
+    float: right;
+    width: 0px;
+    height: 100vh;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: width .4s ease;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.16);
+    border-top: 2px solid rgba(225, 225, 225, 0.3);
+    border-left: 2px solid rgba(225, 225, 225, 0.1);
+}
+
+.dropdown_menu.open {
+    width: 200px;
+}
+
+.dropdown_menu li {
+    transform: translate(0,75px);
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .navbar,
+    .links{
+        display: none;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .toggleButton {
+        display: block;
+    }
+}
