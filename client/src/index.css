@@ -14,3 +14,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Custom Fonts Import */
+
+@font-face {
+  font-family: 'Nord';
+  src: local('Nord-Book'), url('./assets/Fonts/Nord-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.signing-heading {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*--------------------------------------------------------------------------------  */
+
+@media only screen and (max-width: 480px) {
+  html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+  }
+  
+}
