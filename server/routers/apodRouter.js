@@ -4,9 +4,12 @@ const auth = require("../middleware/auth");
 
 router.post("/", auth, async (req, res) => {
     try {
-        const { title } = req.body;
+        const { title, date, url, copyright } = req.body;
         const newApod = new Apod({
             title,
+            date, 
+            url, 
+            copyright
         });
 
         const savedApod = await newApod.save();

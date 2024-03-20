@@ -5,8 +5,9 @@ import Register from "./components/auth/SignUp";
 import Login from "./components/auth/Login";
 import AuthContext from "./context/AuthContext";
 import Customers from "./components/customers/Customers";
-import Apod from "./components/Apod";
+import Apod from "./components/apod/Apod";
 import Map from "./components/Eonet";
+import Profile from "./components/apod/profile";
 
 
 function Router() {
@@ -16,7 +17,7 @@ function Router() {
     return (
         <BrowserRouter>
         <Navbar />
-            <Routes>
+            <Routes> 
                 <Route exact path="/" element={<div>Home</div>} />
                 <Route path="/Apod" element={<Apod />} />
                 <Route path="/Eonet" element={<Map />} />
@@ -30,6 +31,7 @@ function Router() {
                 {
                     loggedIn === true && ( <>
                 <Route path="/customer" element={<Customers />} />
+                <Route path="/Profile" element={<Profile />} />
                     </>
                     )}
             
