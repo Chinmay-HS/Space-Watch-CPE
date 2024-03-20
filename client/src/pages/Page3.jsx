@@ -15,10 +15,10 @@ useEffect(() =>{
   function handle(e) {
     document.addEventListener("mousemove", move)
     
-    setMousePosition({
-      x: e.pageX,
-      y: e.pageY
-    });
+    // setMousePosition({
+    //   x: e.pageX,
+    //   y: e.pageY
+    // });
   }
   function move(e) {
     setMousePosition({

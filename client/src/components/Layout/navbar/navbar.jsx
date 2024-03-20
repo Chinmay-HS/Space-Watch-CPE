@@ -13,7 +13,7 @@ function Navbar() {
       {/*<div className="logo"> <img src={team_logo} alt="" /></div>*/} 
       <div className="navbar">
         <ul className="links">
-          <li><a href='/'>Modules</a></li>
+          <li><a href='./../../../pages/Page2.jsx'>Modules</a></li>
           <li><a href='/'>Use Cases</a></li>
           <li><a href='?'>Login</a></li>
           <li><a href='?'>About Us</a></li>
