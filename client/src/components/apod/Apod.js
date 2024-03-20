@@ -128,6 +128,7 @@ function Apod() {
   const [selectedDate, setSelectedDate] = useState('');
   const [apodData, setApodData] = useState(null);
   const [error, setError] = useState(null);
+  const [isPosting, setIsPosting] = useState(false); // State for posting status
 
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
@@ -143,18 +144,28 @@ function Apod() {
       const data = await response.json();
       setApodData(data);
       setError(null);
-
-      // Save APOD data
-      await axios.post("http://localhost:3001/apod/", {
-        title: data.title,
-        date: data.date,
-        url: data.url,
-        copyright: data.copyright
-      });
-      console.log('Image has been added to favorites');
     } catch (error) {
       setApodData(null);
       setError('Error fetching APOD data');
+    }
+  };
+
+  const handlePostToFavorites = async () => {
+    if (!apodData || isPosting) return; // Prevent duplicate posts or when no data is available
+    setIsPosting(true); // Set posting state to true
+
+    try {
+      const response = await axios.post("http://localhost:3001/apod/", {
+        title: apodData.title,
+        date: apodData.date,
+        url: apodData.url,
+        copyright: apodData.copyright
+      });
+      console.log('Image has been added to favorites');
+    } catch (error) {
+      console.error('Error posting to favorites:', error);
+    } finally {
+      setIsPosting(false); // Reset posting state after completion
     }
   };
 
@@ -163,12 +174,12 @@ function Apod() {
       <h1>Astronomy Picture of the Day</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="date">Select Date:</label>
-        <input 
-          type="date" 
-          id="date" 
-          name="date" 
-          value={selectedDate} 
-          onChange={handleDateChange} 
+        <input
+          type="date"
+          id="date"
+          name="date"
+          value={selectedDate}
+          onChange={handleDateChange}
         />
         <button type="submit">Fetch APOD</button>
       </form>
@@ -178,6 +189,9 @@ function Apod() {
           <h2>{apodData.title}</h2>
           <img src={apodData.url} alt={apodData.title} />
           <p>{apodData.explanation}</p>
+          <button disabled={isPosting} onClick={handlePostToFavorites}>
+            {isPosting ? 'Posting...' : 'Post to Favorites'}
+          </button>
         </div>
       )}
     </div>

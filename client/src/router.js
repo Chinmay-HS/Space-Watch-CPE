@@ -4,7 +4,6 @@ import NavbarJD from "./components/layout/navbar/navbar";
 import Register from "./components/auth/SignUp";
 import Login from "./components/auth/Login";
 import AuthContext from "./context/AuthContext";
-import Customers from "./components/customers/Customers";
 import Apod from "./components/apod/Apod";
 import Map from "./components/Eonet";
 import Profile from "./components/apod/profile";
@@ -31,7 +30,6 @@ function Router() {
                 )}
                 {
                     loggedIn === true && ( <>
-                <Route path="/customer" element={<Customers />} />
                 <Route path="/Profile" element={<Profile />} />
                     </>
                     )}
