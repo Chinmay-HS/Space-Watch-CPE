@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Navbar from "./components/layout/navbar";
+import NavbarJD from "./components/layout/navbar/navbar";
 import Register from "./components/auth/SignUp";
 import Login from "./components/auth/Login";
 import AuthContext from "./context/AuthContext";
@@ -16,7 +16,7 @@ function Router() {
 
     return (
         <BrowserRouter>
-        <Navbar />
+        <NavbarJD />
 
             <Routes>
                 <Route exact path="/" element={<Home/>} />

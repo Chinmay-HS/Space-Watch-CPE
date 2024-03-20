@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './navbar.css'
 import MenuLogo from './../../../assets/images/more.png';
 import team_logo from './../../../assets/images/pixellabs_white 1.png';
 
 
 
-function Navbar() {
+function NavbarJD() {
   const [toggle,setToggle] = useState(false);
 
   return (
@@ -44,4 +44,4 @@ const showMenu = () => {
 
 }
 
-export default Navbar;
+export default NavbarJD;
