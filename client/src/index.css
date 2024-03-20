@@ -2,6 +2,7 @@
   margin: auto;
 }
 body {
+  overflow-x:hidden ;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -18,26 +19,32 @@ code {
 /* Custom Fonts Import */
 
 @font-face {
-  font-family: 'Nord';
-  src: local('Nord-Book'), url('./assets/Fonts/Nord-Book.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
+  font-family: 'NokiaExpanded Bold';
+  src: local('NokiaExpanded'), url('./assets/Fonts/nokia-expanded-2023-11-27-05-18-41-utc/NokiaExpanded-Bold.otf') 
+  format('opentype');
 }
 
-.signing-heading {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+@font-face {
+  font-family: 'Nord Book';
+  src: local('Nord'), url('./assets/Fonts/nord-minimal-display-headline-logo-typeface-2023-11-27-05-26-56-utc/OTF/Nord-Book.otf') 
+  format('opentype');
 }
 
-
+@font-face {
+  font-family: 'Just Sans';
+  font-weight: 2px;
+  src: url('./assets/Fonts/just-sans-clean-modern-minimal-geometric-typeface-2023-11-27-04-59-22-utc/OTFs/JUST\ Sans\ Light.otf')
+  format('opentype');
+}
 /*--------------------------------------------------------------------------------  */
 
 @media only screen and (max-width: 480px) {
-  html,body {
+  .page1, .page2 {
     width: 100%;
     height: 100%;
     margin: 0%;
     padding: 0%;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   
 }

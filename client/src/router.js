@@ -9,7 +9,7 @@ import Apod from "./components/apod/Apod";
 import Map from "./components/Eonet";
 import Profile from "./components/apod/profile";
 
-
+import Home from "./Home";
 function Router() {
 
     const {loggedIn} = useContext(AuthContext);
@@ -17,8 +17,9 @@ function Router() {
     return (
         <BrowserRouter>
         <Navbar />
-            <Routes> 
-                <Route exact path="/" element={<div>Home</div>} />
+
+            <Routes>
+                <Route exact path="/" element={<Home/>} />
                 <Route path="/Apod" element={<Apod />} />
                 <Route path="/Eonet" element={<Map />} />
 

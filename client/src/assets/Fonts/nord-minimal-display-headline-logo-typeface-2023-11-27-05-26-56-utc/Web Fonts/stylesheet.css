@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Nord';
+    src: url('Nord-Regular.eot');
+    src: url('Nord-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Nord-Regular.woff2') format('woff2'),
+        url('Nord-Regular.woff') format('woff'),
+        url('Nord-Regular.ttf') format('truetype'),
+        url('Nord-Regular.svg#Nord-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nord';
+    src: url('Nord-Bold.eot');
+    src: url('Nord-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Nord-Bold.woff2') format('woff2'),
+        url('Nord-Bold.woff') format('woff'),
+        url('Nord-Bold.ttf') format('truetype'),
+        url('Nord-Bold.svg#Nord-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nord';
+    src: url('Nord-Thin.eot');
+    src: url('Nord-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Nord-Thin.woff2') format('woff2'),
+        url('Nord-Thin.woff') format('woff'),
+        url('Nord-Thin.ttf') format('truetype'),
+        url('Nord-Thin.svg#Nord-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nord';
+    src: url('Nord-Black.eot');
+    src: url('Nord-Black.eot?#iefix') format('embedded-opentype'),
+        url('Nord-Black.woff2') format('woff2'),
+        url('Nord-Black.woff') format('woff'),
+        url('Nord-Black.ttf') format('truetype'),
+        url('Nord-Black.svg#Nord-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nord Book';
+    src: url('Nord-Book.eot');
+    src: url('Nord-Book.eot?#iefix') format('embedded-opentype'),
+        url('Nord-Book.woff2') format('woff2'),
+        url('Nord-Book.woff') format('woff'),
+        url('Nord-Book.ttf') format('truetype'),
+        url('Nord-Book.svg#Nord-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nord';
+    src: url('Nord-ThinItalic.eot');
+    src: url('Nord-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Nord-ThinItalic.woff2') format('woff2'),
+        url('Nord-ThinItalic.woff') format('woff'),
+        url('Nord-ThinItalic.ttf') format('truetype'),
+        url('Nord-ThinItalic.svg#Nord-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nord';
+    src: url('Nord-Medium.eot');
+    src: url('Nord-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Nord-Medium.woff2') format('woff2'),
+        url('Nord-Medium.woff') format('woff'),
+        url('Nord-Medium.ttf') format('truetype'),
+        url('Nord-Medium.svg#Nord-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nord';
+    src: url('Nord-BlackItalic.eot');
+    src: url('Nord-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Nord-BlackItalic.woff2') format('woff2'),
+        url('Nord-BlackItalic.woff') format('woff'),
+        url('Nord-BlackItalic.ttf') format('truetype'),
+        url('Nord-BlackItalic.svg#Nord-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nord';
+    src: url('Nord-LightItalic.eot');
+    src: url('Nord-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Nord-LightItalic.woff2') format('woff2'),
+        url('Nord-LightItalic.woff') format('woff'),
+        url('Nord-LightItalic.ttf') format('truetype'),
+        url('Nord-LightItalic.svg#Nord-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nord';
+    src: url('Nord-MediumItalic.eot');
+    src: url('Nord-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Nord-MediumItalic.woff2') format('woff2'),
+        url('Nord-MediumItalic.woff') format('woff'),
+        url('Nord-MediumItalic.ttf') format('truetype'),
+        url('Nord-MediumItalic.svg#Nord-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nord';
+    src: url('Nord-Light.eot');
+    src: url('Nord-Light.eot?#iefix') format('embedded-opentype'),
+        url('Nord-Light.woff2') format('woff2'),
+        url('Nord-Light.woff') format('woff'),
+        url('Nord-Light.ttf') format('truetype'),
+        url('Nord-Light.svg#Nord-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nord Book';
+    src: url('Nord-BookItalic.eot');
+    src: url('Nord-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('Nord-BookItalic.woff2') format('woff2'),
+        url('Nord-BookItalic.woff') format('woff'),
+        url('Nord-BookItalic.ttf') format('truetype'),
+        url('Nord-BookItalic.svg#Nord-BookItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nord';
+    src: url('Nord-BoldItalic.eot');
+    src: url('Nord-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Nord-BoldItalic.woff2') format('woff2'),
+        url('Nord-BoldItalic.woff') format('woff'),
+        url('Nord-BoldItalic.ttf') format('truetype'),
+        url('Nord-BoldItalic.svg#Nord-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nord';
+    src: url('Nord-Italic.eot');
+    src: url('Nord-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Nord-Italic.woff2') format('woff2'),
+        url('Nord-Italic.woff') format('woff'),
+        url('Nord-Italic.ttf') format('truetype'),
+        url('Nord-Italic.svg#Nord-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
