@@ -1,7 +1,6 @@
 import React, { useState, useContext } from 'react';
 import './navbar.css'
 import MenuLogo from './../../../assets/images/more.png';
-import team_logo from './../../../assets/images/pixellabs_white 1.png';
 import { Link } from "react-router-dom";
 import AuthContext from "../../../context/AuthContext";
 import LogOutBtn from "../../../components/auth/LogOutBtn";
@@ -20,16 +19,16 @@ function NavbarJD() {
       <div className='links'>
         <Link to="/">Home</Link>
         <Link to="/Apod">APOD</Link>
-        <Link to="/Eonet">EONET</Link>
+        <Link to="/EonetMain">EONET</Link>
+        <Link to="/MarsRoverSearch">Mars</Link>
         { loggedIn === false && (
             <>
-                <Link to="/register">Sign Up</Link>
+            
                 <Link to="/login">Log in</Link>
             </>
         )}
         {loggedIn === true &&  (
             <>
-            <Link to="/customer">Customers</Link> 
             <Link to="/profile">Profile</Link>
             <LogOutBtn />
             </>
@@ -41,7 +40,7 @@ function NavbarJD() {
       <div>
         <Link to="/">Home</Link>
         <Link to="/Apod">APOD</Link>
-        <Link to="/Eonet">EONET</Link>
+        <Link to="/EonetMain">EONET</Link>
         { loggedIn === false && (
             <>
                 <Link to="/register">Sign Up</Link>
@@ -61,14 +60,10 @@ function NavbarJD() {
   );
 }
 
-{/*const toggleButton = document.querySelector('#btn');
-const menu =  document.querySelector('.dropdown_menu');
 
-toggleButton.onClick = function (){
-  menu.classList.toggle('open')
-}*/}
 const button = document.getElementById('#btn')
 const menu =  document.getElementById('#dropdown_menu');
+// eslint-disable-next-line no-unused-vars
 const showMenu = () => {
   menu.classList.toggle('open');
   button.classList.toggle('open');

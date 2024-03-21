@@ -4,6 +4,13 @@
     height: calc(100vh - 77px); /* calculate height of the screen minus the heading */
   }
   
+.custom-marker {
+    width: 20px;
+    height: 20px;
+    background-color: #FF0000;
+    border-radius: 50%;
+  }
+  
   .map {
     position: absolute;
     width: 100%;

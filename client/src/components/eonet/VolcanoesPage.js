@@ -3,7 +3,7 @@ import * as maptilersdk from '@maptiler/sdk';
 import "@maptiler/sdk/dist/maptiler-sdk.css";
 import './map.css';
 
-export default function Map() {
+export default function VolcanoesPage() {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const tokyo = { lng: 139.753, lat: 35.6844 };
@@ -26,7 +26,7 @@ export default function Map() {
 
   const fetchEventData = async () => {
     try {
-      const response = await fetch('https://proxy.cors.sh/https://eonet.gsfc.nasa.gov/api/v3/categories/8', {
+      const response = await fetch('https://proxy.cors.sh/https://eonet.gsfc.nasa.gov/api/v3/categories/12', {
         headers: {
           'x-cors-api-key': 'temp_a7bca9eee1bcdba4e92ef48badfc14bc'
         }
@@ -41,6 +41,8 @@ export default function Map() {
       console.error('Error fetching event data:', error);
     }
   };
+
+  
 
   const placeMarkers = (events) => {
     events.forEach(event => {
