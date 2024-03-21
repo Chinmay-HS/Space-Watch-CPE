@@ -17,9 +17,28 @@ code {
 }
 
 /* Custom Fonts Import */
+
 @font-face {
-  font-family: 'Noir Pro Regular';
-  src: local('NoirPro'), url('./assets/Fonts/noir-pro-2023-11-27-05-25-58-utc/NoirPro-Regular.otf')
+  font-family: 'Noir Pro Bold';
+  src: local('NoirPro'), url('./assets/Fonts/noir-pro-2023-11-27-05-25-58-utc/NoirPro-Bold.otf')
+  format('opentype');
+}
+
+@font-face {
+  font-family: 'Noir Pro Medium';
+  src: local('NoirPro'), url('./assets/Fonts/noir-pro-2023-11-27-05-25-58-utc/NoirPro-Medium.otf')
+  format('opentype');
+}
+
+@font-face {
+  font-family: 'Noir Pro Light';
+  src: local('NoirPro'), url('./assets/Fonts/noir-pro-2023-11-27-05-25-58-utc/NoirPro-Light.otf')
+  format('opentype');
+}
+
+@font-face {
+  font-family: 'Noir Pro Light';
+  src: local('NoirPro'), url('./assets/Fonts/noir-pro-2023-11-27-05-25-58-utc/NoirPro-Light.otf')
   format('opentype');
 }
 
@@ -36,19 +55,27 @@ code {
 }
 
 @font-face {
-  font-family: 'Just Sans';
+  font-family: 'Nord Medium';
+  src: local('Nord'), url('./assets/Fonts/nord-minimal-display-headline-logo-typeface-2023-11-27-05-26-56-utc/OTF/Nord-Medium.otf') 
+  format('opentype');
+}
+
+@font-face {
+  font-family: 'Just Sans Light';
   font-weight: 2px;
   src: url('./assets/Fonts/just-sans-clean-modern-minimal-geometric-typeface-2023-11-27-04-59-22-utc/OTFs/JUST\ Sans\ Light.otf')
   format('opentype');
 }
+
+
 /*--------------------------------------------------------------------------------  */
 
 @media only screen and (max-width: 480px) {
   .page1, .page2 .page3 .page4 {
-    width: 100%;
-    height: 100%;
-    margin: 0%;
-    padding: 0%;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0% !important;
+    padding: 0% !important;
     overflow-x: hidden !important;
   }
   

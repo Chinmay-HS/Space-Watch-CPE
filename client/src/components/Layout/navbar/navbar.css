@@ -15,7 +15,7 @@ a {
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 50px;
-    z-index: 2;
+    z-index: 100;
     border-top: 2px solid rgba(225, 225, 225, 0.3);
     border-left: 2px solid rgba(225, 225, 225, 0.1);
     border-right: 1px solid rgba(225, 225, 225, 0.2);
@@ -93,12 +93,14 @@ a {
 }
 
 .logout{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
     display: flex;
     font-family: "Just sans";
-    font-weight: 5px;
     font-size: 17px;
     border-radius: 50px;
-    backdrop-filter: blur(5px);
+    border-width: 0;
     background-color: rgba(255, 255, 255, 0);
 }
 

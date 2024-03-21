@@ -24,6 +24,19 @@
   height: 100vh;
 }
 
+.gradient {
+  height: 100vh;
+  background-image: linear-gradient(
+            to bottom,
+            rgba(28, 28, 28,1),
+            rgba(28, 28, 28, 0.514),
+            rgba(0,0,0,0),
+            rgba(0,0,0,0),
+            rgba(0,0,0,0)
+         );
+  z-index: 3;
+}
+
 .bg-pg4 {
   width: 100%;
   height: 100vh;
@@ -78,7 +91,7 @@
 }
 .credit {
   color: white;
-  font-family: "Just sans";
+  font-family: "Just Sans";
   position: relative;
   text-align: center;
   font-size: 16px;
@@ -93,11 +106,18 @@
 }
 
 .team_logo {
-  margin-top: 35px;
+  margin-top: 1.7rem;
   float: left;
   display: flex;
   align-items: center;
 }
+
+.team_logo2 {
+  position: absolute;
+  bottom: 1.3rem;
+  left: 1.3rem;
+}
+
 #image-track {
   display: flex;
   gap: 4vmin;
@@ -120,6 +140,7 @@
 }
 
 .img1 {
+  border-radius: 10px;
   z-index: -1;
   position: absolute;
   width: 40vmin;
@@ -144,10 +165,43 @@
     line-height: 56vmin; */
 }
 
-.Bento {
-    height: 100vh;
-  
+.glass-pg4 {
+  margin-top: 20vh;
+  margin-left: 5vw;
+  width: 55%;
+  height: 550px;
+  position: absolute;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.16);
+  border-top: 2px solid rgba(225, 225, 225, 0.3);
+  border-left: 2px solid rgba(225, 225, 225, 0.1);
+  border-right: 1px solid rgba(225, 225, 225, 0.2);
+  border-bottom: 1.5px solid rgba(225, 225, 225, 0.1);
 }
+
+.about-us {
+  margin-left: 3vw;
+  margin-top: 5vh;
+  color: white;
+  width: fit-content;
+  font-family: 'Noir Pro Bold';
+  font-size: 3rem;
+  float: left;
+}
+
+
+.desc {
+  text-align: justify;
+  position: absolute;
+  margin-top: 13vh;
+  margin-left: 3vw;
+  color: white;
+  width: 80%;
+  font-family: "Just Sans Light";
+  font-size: 1.15rem;
+}
+
 
 @media screen and (min-width: 700px) and (max-width: 930px) {
   .tagLine {

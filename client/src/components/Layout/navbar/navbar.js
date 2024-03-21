@@ -49,20 +49,20 @@ function NavbarJD() {
         className={`dropdown_menu ${toggle ? "open" : ""}`}
       >
         <div>
-          <Link to="/">Home</Link>
-          <Link to="/Apod">APOD</Link>
-          <Link to="/Eonet">EONET</Link>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/Apod">APOD</Link></li>
+          <li><Link to="/Eonet">EONET</Link></li>
           {loggedIn === false && (
             <>
-              <Link to="/register">Sign Up</Link>
-              <Link to="/login">Log in</Link>
+              <li><Link to="/register">Sign Up</Link></li>
+              <li><Link to="/login">Log in</Link></li>
             </>
           )}
           {loggedIn === true && (
             <>
-              <Link to="/customer">Customers</Link>
-              <Link to="/profile">Profile</Link>
-              <LogOutBtn />
+              <li><Link to="/customer">Customers</Link></li>
+              <li><Link to="/profile">Profile</Link></li>
+              <li><LogOutBtn /></li>
             </>
           )}
         </div>

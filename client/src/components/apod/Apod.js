@@ -121,11 +121,12 @@ function Apod() {
 export default Apod;
 */
 
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useState } from "react";
+import axios from "axios";
+import "./apod.css";
 
 function Apod() {
-  const [selectedDate, setSelectedDate] = useState('');
+  const [selectedDate, setSelectedDate] = useState("");
   const [apodData, setApodData] = useState(null);
   const [error, setError] = useState(null);
   const [isPosting, setIsPosting] = useState(false); // State for posting status
@@ -137,16 +138,18 @@ function Apod() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=Owwu0ar0RtvX84p0bjHW1r7nlzKvozGfdCpqx8yR&date=${selectedDate}`);
+      const response = await fetch(
+        `https://api.nasa.gov/planetary/apod?api_key=Owwu0ar0RtvX84p0bjHW1r7nlzKvozGfdCpqx8yR&date=${selectedDate}`
+      );
       if (!response.ok) {
-        throw new Error('Failed to fetch APOD data');
+        throw new Error("Failed to fetch APOD data");
       }
       const data = await response.json();
       setApodData(data);
       setError(null);
     } catch (error) {
       setApodData(null);
-      setError('Error fetching APOD data');
+      setError("Error fetching APOD data");
     }
   };
 
@@ -159,38 +162,55 @@ function Apod() {
         title: apodData.title,
         date: apodData.date,
         url: apodData.url,
-        copyright: apodData.copyright
+        copyright: apodData.copyright,
       });
-      console.log('Image has been added to favorites');
+      console.log("Image has been added to favorites");
     } catch (error) {
-      console.error('Error posting to favorites:', error);
+      console.error("Error posting to favorites:", error);
     } finally {
       setIsPosting(false); // Reset posting state after completion
     }
   };
 
+  console.log(apodData);
+
   return (
     <div className="apod">
-      <h1>Astronomy Picture of the Day</h1>
+      <div className="pg-name">ASTRONOMY PICTURE OF THE DAY</div>
+      <div className="tagline">DISCOVER THE COSMOS</div>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="date">Select Date:</label>
+        <label htmlFor="date" className="date-inst">
+          Select Date:
+        </label>
         <input
+          className="date-picker"
           type="date"
           id="date"
           name="date"
           value={selectedDate}
           onChange={handleDateChange}
         />
-        <button type="submit">Fetch APOD</button>
+        <button className="fetch-btn" type="submit">
+          Fetch APOD
+        </button>
       </form>
       {error && <p>{error}</p>}
       {apodData && (
         <div>
-          <h2>{apodData.title}</h2>
-          <img src={apodData.url} alt={apodData.title} />
-          <p>{apodData.explanation}</p>
-          <button disabled={isPosting} onClick={handlePostToFavorites}>
-            {isPosting ? 'Posting...' : 'Post to Favorites'}
+          <div className="img-frame">
+            {" "}
+            <img src={apodData.url} alt={apodData.title} />{" "}
+          </div>
+          <div className="img-name">{apodData.title}</div>
+          <div className="explaination">
+            {apodData.explanation} <p>Date: {apodData.date}</p>
+          </div>
+          <button
+            className="fav-btn"
+            disabled={isPosting}
+            onClick={handlePostToFavorites}
+          >
+            {isPosting ? "Posting..." : "Post to Favorites"}
           </button>
         </div>
       )}
