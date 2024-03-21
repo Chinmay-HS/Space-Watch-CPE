@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavbarJD from "./components/layout/navbar/navbar";
 import Register from "./components/auth/SignUp";
@@ -11,20 +11,26 @@ import MainPage from "./components/eonet/EonetMain";
 import WildFirePage from "./components/eonet/WildFirePage";
 import IcePage from "./components/eonet/IcePage";
 import VolcanoesPage from "./components/eonet/VolcanoesPage";
+import ISSMap from "./components/isstracking/ISSMain";
+import Celestialchoreography from "./components/celestialcheography/celestialchoreography";
 
 function Router() {
   const { loggedIn } = useContext(AuthContext);
+  const scrollRef = useRef(null);
 
   return (
     <BrowserRouter>
-      <NavbarJD />
+      <NavbarJD scrollRef={scrollRef}/>
             <Routes>
-                <Route exact path="/" element={<Home/>} />
+                <Route exact path="/" element={<Home scrollRef={scrollRef}/>} />
                 <Route path="/Apod" element={<Apod />} />
                 <Route path="/EonetMain" element={<MainPage />} />
                 <Route path="/WildFirePage" element={<WildFirePage />} />
                 <Route path="/IcePage" element={<IcePage />} />
                 <Route path="/VolcanoesPage" element={<VolcanoesPage />} />
+                <Route path="/ISSMain" element={<ISSMap />} />
+                <Route path="/celestialchoreography" element={<Celestialchoreography />} />
+
 
         {loggedIn === false && (
           <>

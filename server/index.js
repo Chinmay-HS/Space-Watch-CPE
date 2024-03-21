@@ -32,3 +32,8 @@ mongoose.connect(process.env.MDB_CONNECT, {useNewUrlParser: true, useUnifiedTopo
 app.use("/auth", require("./routers/userRouter"));
 app.use("/customer", require("./routers/customerRouter"));
 app.use("/apod", require("./routers/apodRouter"));
+app.use(function (req, res, next) {
+    res.locals.user = req.user;
+    next();
+});
+

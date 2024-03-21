@@ -42,7 +42,7 @@ export default Profile;
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './profile.css'; // Import the CSS file
+import './profile.css';
 
 function Profile() {
   const [apodData, setApodData] = useState([]);
@@ -63,10 +63,13 @@ function Profile() {
   }, []);
 
   return (
-    <div className="profile">  <h1>My Favorite APODs</h1>
+    <div className="profile">
+      <h1>My Favorite APODs</h1>
       {error && <p>{error}</p>}
-      <div className="apod-grid">  {apodData.map(apod => (
-          <div key={apod._id} className="apod-card">  <h2>{apod.title}</h2>
+      <div className="apod-grid">
+        {apodData.map(apod => (
+          <div key={apod._id} className="apod-card">
+            <h2>{apod.title}</h2>
             <img src={apod.url} alt={apod.title} />
             <p>Date: {apod.date}</p>
             <p>Copyright: {apod.copyright}</p>
@@ -78,3 +81,5 @@ function Profile() {
 }
 
 export default Profile;
+
+
