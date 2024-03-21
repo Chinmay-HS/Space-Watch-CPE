@@ -17,6 +17,11 @@ code {
 }
 
 /* Custom Fonts Import */
+@font-face {
+  font-family: 'Noir Pro Regular';
+  src: local('NoirPro'), url('./assets/Fonts/noir-pro-2023-11-27-05-25-58-utc/NoirPro-Regular.otf')
+  format('opentype');
+}
 
 @font-face {
   font-family: 'NokiaExpanded Bold';
@@ -39,7 +44,7 @@ code {
 /*--------------------------------------------------------------------------------  */
 
 @media only screen and (max-width: 480px) {
-  .page1, .page2 {
+  .page1, .page2 .page3 .page4 {
     width: 100%;
     height: 100%;
     margin: 0%;

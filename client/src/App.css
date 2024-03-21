@@ -1,53 +1,52 @@
 .page1 {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
 }
 
 .page2 {
-    position: relative;
-    background-color: #1C1C1C;
-    display:flex;
-    height: 100vh;
+  position: relative;
+  background-color: #1c1c1c;
+  display: flex;
+  height: 100vh;
 }
 
 .page3 {
-    position: relative;
-    display:flex;
-    height: 100vh;
+  position: relative;
+  display: flex;
+  height: 100vh;
 }
 
 .page4 {
-    position: relative;
-    display:flex;
-    height: 100vh;
+  position: relative;
+  display: flex;
+  height: 100vh;
 }
 
 .bg-pg4 {
-    width: 100%;
-    height:100vh;
-    background-image: url("./assets/images/bg-pg4(2).jpg");
-    background-attachment:scroll;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/images/bg-pg4(2).jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .background {
-    width: 100%;
-    height:100vh;
-    background-image: url('./assets/images/test.png');
-    background-attachment:scroll;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/images/test.png");
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
 
 /* img {
     height:100vh;
@@ -57,144 +56,169 @@
 } */
 
 .data {
-    color: black;
-    z-index: 100;
+  color: black;
+  z-index: 100;
 }
 
 .title {
-    width: fit-content;
-    color:#FFFFFF;
-    font-family: "NokiaExpanded Bold";
-    font-size: 95px;
-    text-align: center;
-    padding-top: 40vh;
-    letter-spacing: 5px;
+  width: fit-content;
+  color: #ffffff;
+  font-family: "NokiaExpanded Bold";
+  font-size: 95px;
+  text-align: center;
+  padding-top: 40vh;
+  letter-spacing: 5px;
 }
 
 .tagLine {
-    font-family: "Nord Book";
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 30px;
+  font-family: "Nord Book";
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
 }
 .credit {
-    color: white;
-    font-family: "Just sans";
-    position: relative;
-    text-align: center;
-    font-size: 16px;
-    top: 25%;
+  color: white;
+  font-family: "Just sans";
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  top: 31%;
 }
 
 .nasa-logo {
-    display: flex;
-    position: relative;
-    top: 21%;
-    scale: 20%;
+  display: flex;
+  position: relative;
+  top: 27%;
+  scale: 20%;
 }
 
-.team_logo{
-    margin-top: 30px;
-    float: left;
-    display: flex;
-    align-items: center;
+.team_logo {
+  margin-top: 35px;
+  float: left;
+  display: flex;
+  align-items: center;
 }
 #image-track {
-    display: flex;
-    gap: 4vmin;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(0%, -50%); 
-    user-select: none; /* -- Prevent image highlighting -- */
-  }
-  
-#image-track > .image {
-   width: 40vmin;
-   height: 56vmin;
-   object-fit: cover;
-   object-position: 100% center;
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 40.5%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  user-select: none; /* -- Prevent image highlighting -- */
 }
 
+#image-track > .image {
+  position: relative;
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.img1 {
+  z-index: -1;
+  position: absolute;
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  filter: brightness(.6);
+  /* background-image: url("https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-size: cover;
+    background-position: 100% center;
+    background-repeat: no-repeat; */
+}
 
-  @media screen and (min-width: 700px) and (max-width: 930px) {
-    .tagLine {
-      font-size: 20px;
-    }
+.mod-name {
+    font-family: "Noir Pro Regular";
+    font-size: 2rem;
+    color: white;
+    margin: auto;
+    text-align: center;
+    
+    /* vertical-align: middle;
+    line-height: 56vmin; */
+}
 
-    .title {
-        vertical-align: middle;
-        font-size: 70px;
-    }
-
-    .credit {
-        top: 30%;
-    }
-
-    .nasa-logo {
-        top: 25%;
-        scale: 15%;
-    }
-  }
-  
-
-
-  @media screen and (min-width: 610px) and (max-width: 700px) {
-    .tagLine {
-      font-size: 20px;
-    }
-
-    .title {
-        vertical-align: middle;
-        font-size: 60px;
-    }
-
-    .credit {
-        top: 30%;
-    }
-
-    .nasa-logo {
-        top: 25%;
-        scale: 15%;
-    }
-  }
-  @media screen and (min-width:500px) and (max-width: 610px) {
-    .tagLine {
-        font-size: 20px;
-      }
-  
-    .title {
-          vertical-align: middle;
-          font-size: 40px;
-      }
-
-    .credit {
-        top: 30%;
-    }
-  
-    .nasa-logo {
-          top: 25%;
-          scale: 15%;
-      }
+@media screen and (min-width: 700px) and (max-width: 930px) {
+  .tagLine {
+    font-size: 20px;
   }
 
-  @media screen and (max-width: 500px) {
-    .tagLine {
-      font-size: 20px;
-    }
-
-    .title {
-        vertical-align: middle;
-        font-size: 35px;
-    }
-
-    .credit {
-        top: 30%;
-    }
-
-    .nasa-logo {
-        top: 25%;
-        scale: 15%;
-    }
+  .title {
+    vertical-align: middle;
+    font-size: 70px;
   }
+
+  .credit {
+    top: 30%;
+  }
+
+  .nasa-logo {
+    top: 27%;
+    scale: 15%;
+  }
+}
+
+@media screen and (min-width: 610px) and (max-width: 700px) {
+  .tagLine {
+    font-size: 20px;
+  }
+
+  .title {
+    vertical-align: middle;
+    font-size: 60px;
+  }
+
+  .credit {
+    top: 30%;
+  }
+
+  .nasa-logo {
+    top: 27%;
+    scale: 15%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 610px) {
+  .tagLine {
+    font-size: 20px;
+  }
+
+  .title {
+    vertical-align: middle;
+    font-size: 40px;
+  }
+
+  .credit {
+    top: 30%;
+  }
+
+  .nasa-logo {
+    top: 27%;
+    scale: 15%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tagLine {
+    font-size: 20px;
+  }
+
+  .title {
+    vertical-align: middle;
+    font-size: 35px;
+  }
+
+  .credit {
+    top: 30%;
+  }
+
+  .nasa-logo {
+    top: 27%;
+    scale: 15%;
+  }
+}

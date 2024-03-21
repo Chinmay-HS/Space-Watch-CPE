@@ -2,6 +2,12 @@
 import React from "react";
 import { useState , useLayoutEffect } from "react";
 import { useRef } from "react";
+import iss from './../assets/images/iss.jpg'
+import MarsRover from './../assets/images/mars-rover.png'
+import eonet from './../assets/images/eonet.jpg'
+import celestialChoreo from './../assets/images/celestial-choreography.jpg'
+import apod from './../assets/images/apod.jpg'
+
 
 
 function useMouse() {
@@ -28,23 +34,28 @@ useLayoutEffect(() =>{
   }
   function move(e) {
     if(mouseXDown === 0 )return;
+    for(const image of ref.current.getElementsByClassName("img1")) {
+      ref.current.style.transition = "transform 0.6s ease-out";
+      image.style.objectPosition=`${100 + nextPercentage}% center`;
+      image.style.transition = `object-position 0.5 ease-out`;
+      ref.current.style.transform=`translate(${nextPercentage.toFixed(2)}%,-50%)`
+    }
     setMouseX(e.pageX);
     setMouseDelta(parseFloat(mouseXDown)-mouseX);
     setMaxDelta(window.innerWidth/2);
     setPercentage((mouseDelta/maxDelta)*-100);
     let nextPercentageUnconstrained = parseFloat(prevPercentage)+ percentage;
-    setNextPercentage(Math.max(Math.min(nextPercentageUnconstrained , 0), -100));
+    setNextPercentage(Math.max(Math.min(nextPercentageUnconstrained , 0), -81.5));
     // setPercentage(nextPercentage); 
     //nextPercentage = Math.max(Math.min(parseFloat(prevPercentage)+ percentage, 0), -100);
-    ref.current.style.transition = "transform 0.5s ease-out";
-    ref.current.style.transform=`translate(${nextPercentage.toFixed(2)}%,-50%)`
+    
     
   }
   function up(e){
-    document.removeEventListener("mousemove", move);
-    document.removeEventListener("mousedown", handle)
     setMouseXDown(0);
     setPrevPercentage(nextPercentage);
+    document.removeEventListener("mousemove", move);
+    document.removeEventListener("mousedown", handle)
   }
 
   console.log(nextPercentage);   
@@ -61,11 +72,36 @@ function Page2 () {
     <div>
       <section className="page2">
         <div id="image-track" ref={ref}>
-          <img className="image" src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false"/>
-          <img className="image" src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" draggable="false" />
-          <img className="image" src="https://images.unsplash.com/photo-1618202133208-2907bebba9e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
-          <img className="image" src="https://images.unsplash.com/photo-1495805442109-bf1cf975750b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
-          <img className="image" src="https://images.unsplash.com/photo-1548021682-1720ed403a5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
+          <div className="image">
+            <img className="img1" src={apod} draggable="false"/>
+            <a href="youtube.com" draggable="false">
+            <h1 className="mod-name">APOD</h1>
+            </a>
+          </div>
+          <div className="image">
+            <img className="img1" src={iss} draggable="false"/>
+            <a href="youtube.com" draggable="false">
+            <h1 className="mod-name">ISS TRACKING</h1>
+            </a>
+          </div>
+          <div className="image">
+            <img className="img1" src={MarsRover} draggable="false"/>
+            <a href="youtube.com" draggable="false">
+            <h1 className="mod-name">MARS ROVER PHOTOS</h1>
+            </a>
+          </div>
+          <div className="image">
+            <img className="img1" src={eonet} draggable="false" />
+            <a href="youtube.com" draggable="false">
+            <h1 className="mod-name">EARTH OBSERVATORY NATURAL EVENT TRACKER</h1>
+            </a>
+          </div>
+          <div className="image">
+            <img className="img1" src={celestialChoreo} draggable="false" />
+            <a href="youtube.com" draggable="false">
+            <h1 className="mod-name">CELESTAIL CHOREOGRAPHY</h1>
+            </a>
+          </div>
         </div>
       </section>
         <div>value of x = {nextPercentage}  value of xdown = {mouseXDown}</div>

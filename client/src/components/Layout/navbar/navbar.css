@@ -29,11 +29,11 @@ a {
 }
 
 .navbar .links {
-    padding-right:30px ;
+    padding-right:0px ;
     display: flex;
     font-family: "Just sans";
     font-weight: 5px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 
@@ -92,7 +92,15 @@ a {
     justify-content: center;
 }
 
-
+.logout{
+    display: flex;
+    font-family: "Just sans";
+    font-weight: 5px;
+    font-size: 17px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0);
+}
 
 @media only screen and (max-width: 900px) {
     .navbar,
