@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavbarJD from "./components/layout/navbar/navbar";
 import Register from "./components/auth/SignUp";
 import Login from "./components/auth/Login";
@@ -13,13 +13,11 @@ import IcePage from "./components/eonet/IcePage";
 import VolcanoesPage from "./components/eonet/VolcanoesPage";
 
 function Router() {
+  const { loggedIn } = useContext(AuthContext);
 
-    const {loggedIn} = useContext(AuthContext);
-
-    return (
-        <BrowserRouter>
-        <NavbarJD />
-
+  return (
+    <BrowserRouter>
+      <NavbarJD />
             <Routes>
                 <Route exact path="/" element={<Home/>} />
                 <Route path="/Apod" element={<Apod />} />
@@ -28,21 +26,20 @@ function Router() {
                 <Route path="/IcePage" element={<IcePage />} />
                 <Route path="/VolcanoesPage" element={<VolcanoesPage />} />
 
-                {
-                    loggedIn === false && ( <>                
-                    <Route path="/register" element={<Register />} />
-                    <Route path="/login" element={<Login />} />
-                    </>
-                )}
-                {
-                    loggedIn === true && ( <>
-                <Route path="/Profile" element={<Profile />} />
-                    </>
-                    )}
-            
-            </Routes>
-        </BrowserRouter>
-    );
-};
+        {loggedIn === false && (
+          <>
+            <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
+          </>
+        )}
+        {loggedIn === true && (
+          <>
+            <Route path="/Profile" element={<Profile />} />
+          </>
+        )}
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
 export default Router;
