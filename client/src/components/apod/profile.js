@@ -40,9 +40,9 @@ function Profile() {
 export default Profile;
 */
 
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import './profile.css';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import "./profile.css";
 
 function Profile() {
   const [apodData, setApodData] = useState([]);
@@ -55,25 +55,25 @@ function Profile() {
         setApodData(response.data);
         setError(null);
       } catch (error) {
-        setError('Error fetching APOD data');
+        setError("Error fetching APOD data");
       }
     };
-
     fetchApodData();
   }, []);
-
   return (
     <div className="profile">
-      <h1>My Favorite APODs</h1>
+      <div className="title">My Favorite APODs</div>
       {error && <p>{error}</p>}
       <div className="apod-grid">
-        {apodData.map(apod => (
-          <div key={apod._id} className="apod-card">
-            <h2>{apod.title}</h2>
-            <img src={apod.url} alt={apod.title} />
-            <p>Date: {apod.date}</p>
-            <p>Copyright: {apod.copyright}</p>
-          </div>
+        {apodData.map((apod) => (
+          <a href="{apodData.url}">
+            <div key={apod._id} className="apod-card">
+              <h2>{apod.title}</h2>
+              <img src={apod.url} alt={apod.title} />
+              <p>Date: {apod.date}</p>
+              <p>Copyright: {apod.copyright}</p>
+            </div>
+          </a>
         ))}
       </div>
     </div>
@@ -81,5 +81,3 @@ function Profile() {
 }
 
 export default Profile;
-
-

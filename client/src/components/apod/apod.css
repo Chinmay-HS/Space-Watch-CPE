@@ -72,6 +72,7 @@ input ::-webkit-calendar-picker-indicator:active {
     float: right;
     margin-top: -6.5vh;
     margin-right: 5.5vw;
+    margin-bottom: 3vh;
     display: flex;
     align-items: center;
     width: 800px;
@@ -96,7 +97,7 @@ input ::-webkit-calendar-picker-indicator:active {
     margin-left: 60px;
     color: white;
     font-family: 'Noir Pro Medium';
-    font-size: 6rem;
+    font-size: 5rem;
 }
 
 .explaination {
@@ -122,6 +123,7 @@ input ::-webkit-calendar-picker-indicator:active {
 .fav-btn {
     margin-top: 2vh;
     margin-left: 39vh;
+    margin-bottom: 3vh;
     border-radius: 5px;
     font-family: 'Noir Pro Light';
     font-size: 1.3rem;
