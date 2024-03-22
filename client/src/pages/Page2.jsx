@@ -72,36 +72,40 @@ function Page2 () {
     <div>
       <section className="page2">
         <div id="image-track" ref={ref}>
-          <div className="image">
-            <img className="img1" src={apod} draggable="false"/>
-            <a href="youtube.com" draggable="false">
-            <h1 className="mod-name">APOD</h1>
+        <div className="image">
+         <img className="img1" src={apod} draggable="false" />
+          <a href="/Apod" target="_blank" rel="noopener noreferrer" draggable="false">
+          <h1 className="mod-name">APOD</h1>
+          </a>
+        </div>
+
+        <div className="image">
+         <img className="img1" src={iss} draggable="false" />
+            <a href="/ISSMain" target="_blank" rel="noopener noreferrer" draggable="false">
+              <h1 className="mod-name">ISS TRACKING</h1>
             </a>
-          </div>
-          <div className="image">
-            <img className="img1" src={iss} draggable="false"/>
-            <a href="youtube.com" draggable="false">
-            <h1 className="mod-name">ISS TRACKING</h1>
-            </a>
-          </div>
-          <div className="image">
-            <img className="img1" src={MarsRover} draggable="false"/>
-            <a href="youtube.com" draggable="false">
-            <h1 className="mod-name">MARS ROVER PHOTOS</h1>
-            </a>
-          </div>
-          <div className="image">
-            <img className="img1" src={eonet} draggable="false" />
-            <a href="youtube.com" draggable="false">
-            <h1 className="mod-name">EARTH OBSERVATORY NATURAL EVENT TRACKER</h1>
-            </a>
-          </div>
-          <div className="image">
-            <img className="img1" src={celestialChoreo} draggable="false" />
-            <a href="youtube.com" draggable="false">
-            <h1 className="mod-name">CELESTAIL CHOREOGRAPHY</h1>
-            </a>
-          </div>
+        </div>
+
+        <div className="image">
+         <img className="img1" src={MarsRover} draggable="false" />
+          <a href="http://localhost:3002" target="_blank" rel="noopener noreferrer" draggable="false">
+             <h1 className="mod-name">MARS ROVER PHOTOS</h1>
+          </a>
+        </div>
+
+        <div className="image">
+         <img className="img1" src={eonet} draggable="false" />
+          <a href="/EonetMain" target="_blank" rel="noopener noreferrer" draggable="false">
+              <h1 className="mod-name">EARTH OBSERVATORY NATURAL EVENT TRACKER</h1>
+          </a>
+        </div>
+
+        <div className="image">
+          <img className="img1" src={celestialChoreo} draggable="false" />
+           <a href="/celestialchoreography" target="_blank" rel="noopener noreferrer" draggable="false">
+             <h1 className="mod-name">CELESTIAL CHOREOGRAPHY</h1>
+           </a>
+        </div>
         </div>
       </section>
     </div>

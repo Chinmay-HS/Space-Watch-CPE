@@ -5,11 +5,13 @@ const auth = require("../middleware/auth");
 router.post("/", auth, async (req, res) => {
     try {
         const { title, date, url, copyright } = req.body;
+        console.log("User Email:", req.user.email);
         const newApod = new Apod({
             title,
             date, 
             url, 
-            copyright
+            copyright,
+            userId: req.user
         });
 
         const savedApod = await newApod.save();
@@ -23,7 +25,8 @@ router.post("/", auth, async (req, res) => {
 
 router.get("/", auth, async (req, res) => {
     try {
-        const apods = await Apod.find();
+        const userId = req.user;
+        const apods = await Apod.find({ userId });
         res.json(apods);
     } catch (err) {
         console.error(err);

@@ -121,9 +121,11 @@ function Apod() {
 export default Apod;
 */
 
-import React, { useState } from "react";
-import axios from "axios";
 import "./apod.css";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+
 
 function Apod() {
   const [selectedDate, setSelectedDate] = useState("");
@@ -134,6 +136,10 @@ function Apod() {
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
   };
+
+  useEffect(() => {
+    document.title = "APOD"
+  }, []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../eonet/EonetMain.css'
 import WildFirePage from './WildFirePage';
@@ -7,11 +8,16 @@ import VolanoesPage from './VolcanoesPage';
 
 const MainPage = () => {
   const backgroundStyle = {
-    backgroundImage: `url('https://images.unsplash.com/photo-1543470373-e055b73a8f29?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+    backgroundImage: `url('https://images.unsplash.com/photo-1615092296061-e2ccfeb2f3d6?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     minHeight: '100vh',
+    
   };
+
+  useEffect(() => {
+    document.title = "EONET"
+  }, []);
 
   return (
     <div style={backgroundStyle}>

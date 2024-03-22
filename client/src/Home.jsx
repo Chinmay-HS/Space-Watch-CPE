@@ -6,12 +6,12 @@ import Page4 from './pages/Page4';
 
 
 
-function Home() {
+function Home({scrollRef}) {
   return (
     <div className="Home">
       {/* <NavbarJD/> */}
       <Page1/>
-      <Page2/>
+      <Page2 scrollRef={scrollRef}/>
       <Page4/>
     </div>
     
