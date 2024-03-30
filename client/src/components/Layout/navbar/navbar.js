@@ -18,19 +18,18 @@ function NavbarJD() {
       <div className="navbar">
         <div className="links">
           <Link to="/">Home</Link>
-          <Link to="/Apod">APOD</Link>
-          <Link to="/Eonet">EONET</Link>
+          {/* <Link to="/Apod">APOD</Link>
+          <Link to="/Eonet">EONET</Link> */}
           {loggedIn === false && (
             <>
               <Link to="/register">Sign Up</Link>
               <Link to="/login">Log in</Link>
-
             </>
           )}
           {loggedIn === true && (
             <>
-            <Link to="/profile">Profile</Link>
-            <LogOutBtn />
+              <Link to="/profile">Profile</Link>
+              <LogOutBtn />
             </>
           )}
         </div>
@@ -49,20 +48,36 @@ function NavbarJD() {
         className={`dropdown_menu ${toggle ? "open" : ""}`}
       >
         <div>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/Apod">APOD</Link></li>
-          <li><Link to="/Eonet">EONET</Link></li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/Apod">APOD</Link>
+          </li>
+          <li>
+            <Link to="/Eonet">EONET</Link>
+          </li>
           {loggedIn === false && (
             <>
-              <li><Link to="/register">Sign Up</Link></li>
-              <li><Link to="/login">Log in</Link></li>
+              <li>
+                <Link to="/register">Sign Up</Link>
+              </li>
+              <li>
+                <Link to="/login">Log in</Link>
+              </li>
             </>
           )}
           {loggedIn === true && (
             <>
-              <li><Link to="/customer">Customers</Link></li>
-              <li><Link to="/profile">Profile</Link></li>
-              <li><LogOutBtn /></li>
+              <li>
+                <Link to="/customer">Customers</Link>
+              </li>
+              <li>
+                <Link to="/profile">Profile</Link>
+              </li>
+              <li>
+                <LogOutBtn />
+              </li>
             </>
           )}
         </div>
@@ -71,14 +86,12 @@ function NavbarJD() {
   );
 }
 
-
-  /*const toggleButton = document.querySelector('#btn');
+/*const toggleButton = document.querySelector('#btn');
 const menu =  document.querySelector('.dropdown_menu');
 
 toggleButton.onClick = function (){
   menu.classList.toggle('open')
 }*/
-
 
 const button = document.getElementById("#btn");
 const menu = document.getElementById("#dropdown_menu");

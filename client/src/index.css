@@ -67,6 +67,12 @@ code {
   format('opentype');
 }
 
+@font-face {
+  font-family: 'Just Sans Medium';
+  font-weight: 2px;
+  src: url('./assets/Fonts/just-sans-clean-modern-minimal-geometric-typeface-2023-11-27-04-59-22-utc/OTFs/JUST\ Sans\ Medium.otf')
+  format('opentype');
+}
 
 /*--------------------------------------------------------------------------------  */
 

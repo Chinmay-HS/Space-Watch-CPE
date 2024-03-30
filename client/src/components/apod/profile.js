@@ -62,7 +62,7 @@ function Profile() {
   }, []);
   return (
     <div className="profile">
-      <div className="title">My Favorite APODs</div>
+      <div className="title-pg">My Favorite APODs</div>
       {error && <p>{error}</p>}
       <div className="apod-grid">
         {apodData.map((apod) => (
