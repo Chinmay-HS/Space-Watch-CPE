@@ -76,7 +76,7 @@ function Home({scrollRef}) {
       {/* <NavbarJD/> */}
       <section className="page1">
         <div className="background">
-          <div className='team_logo'><img src={team_logo} alt="" /></div>
+          {/* <div className='team_logo'><img src={team_logo} alt="" /></div> */}
           <div className='title'>SPACE WATCH</div>
           <div className='tagLine'>Your Real Time Space Information Hub.</div>
           <div className="credit">In accordance with the APIs provided by:</div>
@@ -128,13 +128,32 @@ function Home({scrollRef}) {
       <section className='page4'>
         <div className='bg-pg4'>
           <div className="gradient">
+            <div className="about-us">ABOUT US</div>
+            <div className="desc">Welcome to Pixel Labs, where creativity meets innovation. At Pixel Labs, we are a dynamic team of skilled designers and developers dedicated to crafting cutting-edge software solutions. Our diverse team brings together a wealth of expertise and passion for technology, working tirelessly to bring your ideas to life. Whether it's web development, mobile applications, or bespoke software, we thrive on pushing the boundaries of what's possible. With our collaborative approach and unwavering commitment to excellence, Pixel Labs is your partner in transforming concepts into reality. Join us on this exciting journey as we continue to shape the future of software development.</div>
             <div className="glass-pg4">
-              <div className="about-us">ABOUT US</div>
-              <div className="desc">Welcome to Pixel Labs, where creativity meets innovation. At Pixel Labs, we are a dynamic team of skilled designers and developers dedicated to crafting cutting-edge software solutions. Our diverse team brings together a wealth of expertise and passion for technology, working tirelessly to bring your ideas to life. Whether it's web development, mobile applications, or bespoke software, we thrive on pushing the boundaries of what's possible. With our collaborative approach and unwavering commitment to excellence, Pixel Labs is your partner in transforming concepts into reality. Join us on this exciting journey as we continue to shape the future of software development.</div>
+              <div className='line-pg-about-us'></div>
+              <div className="our-team-tag">our team</div>
+              <div className="team-members">
+                <p>chinmay sawant
+                  <p>(Editor, Designer)</p>
+                </p>
+                <p>Aaditya Padghan
+                  <p>(Designer, Developer)</p>
+                </p>
+                <p>Manish Salvi
+                  <p>(Guide / Mentor)</p>
+                </p>
+                <p>Vishal Chauhan
+                  <p>(Developer)</p>
+                </p>
+                <p>Jash Damania
+                <p>(Animator, Developer)</p>
+                </p>
+              </div>
             </div>
-            <div className='team_logo2'>
+            {/* <div className='team_logo2'>
               <img src={team_logo} alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

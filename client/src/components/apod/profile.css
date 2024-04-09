@@ -13,10 +13,11 @@ html body {
   
 
 .title-pg  {
-  margin-top: -30vh;
+  margin-top: 10vh;
   font-family: 'Nord Medium';
   text-align: center;
   text-transform: uppercase;
+  font-size: 40px;
 }  
 
   .apod-grid {
@@ -25,9 +26,11 @@ html body {
     grid-template-columns: auto auto auto;
     gap: 50px;
     margin-top: 20px;
+    font-family: 
   }
   
   .apod-card {
+    font-family: "Just Sans";
     height: 400px;
     width: 400px;
     background-color: #444; /* Slightly darker background for cards */
@@ -50,6 +53,7 @@ html body {
   .apod-card h2 {
     margin-top: 10px;
     font-weight: normal;
+    font-family: "Just Sans";
   }
   
   .apod-card p {
