@@ -13,7 +13,8 @@ function NavbarJD() {
   const { loggedIn } = useContext(AuthContext);
   console.log(loggedIn);
 
-  const scrollToSection = (ref) => {
+  const scrollToSection = (ref, event) => {
+    event.preventDefault();
     const section=document.getElementById(ref);
     if(section){
       section.scrollIntoView({ behavior: 'smooth' });
@@ -38,8 +39,8 @@ function NavbarJD() {
           {loggedIn === true && (
             <>
               <Link to="/profile">Profile</Link>
-              <a href="#modulesPage" onClick={scrollToSection("modulesPage")}>Modules</a>
-              <a href="#aboutUsPage" onClick={scrollToSection("aboutUsPage")}>About us</a>
+              <a href="#modulesPage" onClick={(e)=>scrollToSection("modulesPage",e)}>Modules</a>
+              <a href="#aboutUsPage" onClick={(e)=>scrollToSection("aboutUsPage",e)}>About us</a>
               <LogOutBtn />
             </>
           )}

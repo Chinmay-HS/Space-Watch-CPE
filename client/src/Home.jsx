@@ -140,7 +140,7 @@ function Home({modulesRef, aboutUsRef}) {
             <div className="glass-pg4">
               <div className='line-pg-about-us'></div>
               <div className="our-team-tag">our team</div>
-              <div className="team-members">
+              <p className="team-members">
                 <p>chinmay sawant
                   <p>(Editor, Designer)</p>
                 </p>
@@ -154,9 +154,9 @@ function Home({modulesRef, aboutUsRef}) {
                   <p>(Developer)</p>
                 </p>
                 <p>Jash Damania
-                <p>(Animator, Developer)</p>
+                  <p>(Animator, Developer)</p>
                 </p>
-              </div>
+              </p>
             </div>
             {/* <div className='team_logo2'>
               <img src={team_logo} alt="" />

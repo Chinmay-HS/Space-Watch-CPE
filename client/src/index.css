@@ -55,6 +55,12 @@ code {
 }
 
 @font-face {
+  font-family: 'Nord Bold';
+  src: local('Nord'), url('./assets/Fonts/nord-minimal-display-headline-logo-typeface-2023-11-27-05-26-56-utc/OTF/Nord-Bold.otf') 
+  format('opentype');
+}
+
+@font-face {
   font-family: 'Nord Medium';
   src: local('Nord'), url('./assets/Fonts/nord-minimal-display-headline-logo-typeface-2023-11-27-05-26-56-utc/OTF/Nord-Medium.otf') 
   format('opentype');

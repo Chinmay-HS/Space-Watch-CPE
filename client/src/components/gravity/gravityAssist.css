@@ -48,6 +48,178 @@
     border-radius: 25px;
     height: 50px;
     width: 40%;
-    margin-top: 40px;
+    margin-top: 30px;
     background-color: #160D27;
+}
+
+.section-pg2 {
+    background-color: #1D142D;
+    height: 100vh;
+    display: flex;
+}
+
+.keyTerms {
+    margin-left: 0px;
+    margin-right: 0px;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Nord Bold';
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.font-bold {
+    font-family: 'Noir Pro Medium';
+    font-size: 26px;
+    color: white;
+}
+
+.font-light {
+    font-family: 'Noir Pro Light';
+    font-size: 26px;
+    text-align: justify;
+    color: white;
+}
+
+.partition {
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: white;
+    width: 2px;
+    height: 60%;
+}
+
+.calculating-gravity-assist {
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.section-pg3 {
+    background-color: #160D27;
+    height: 100vh;
+    display: flex;
+}
+
+.formulae {
+    margin-top: 21vh;;
+    width: 50%;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.heading-formulae {
+    padding-bottom: 10vh;
+    text-align: center;
+    font-family: 'Nord Bold';
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.Steps {
+    
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.section-pg4 {
+    background-color: #1D142D;
+    display: flex;
+    min-height: 100vh;
+    max-height: fit-content;
+    color: white;
+}
+
+.calculator {
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.heading-calculator {
+    text-align: left;
+    font-family: 'Nord Bold';
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.result-heading-layout {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.heading-result {
+    font-family: 'Nord Medium';
+    font-size: 32px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.custom-line {
+    background-color: white;
+    height: 1px;
+    width: 15vw;
+    margin-left: 30px;
+}
+
+.usage {
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 0px;
+}
+
+.font-light-contentPg4 {
+    font-family: 'Noir Pro Light';
+    font-size: 26px;
+    text-align: justify;
+    color: white;
+    margin-right: 20%;
+}
+
+
+.spaceCraftImg {
+    margin-top: 30px;
+    background-image: url('./../../assets/images/gravity-section-pg4-img.png');
+    background-size: cover;
+    height: 50vh;
+    width: 40vw;
+    float: right;
+}
+
+.gravity-input {
+    font-size: 18px;
+    color: white;
+    background-color: #160D27;
+    height: 30px;
+    width: 10vw;
+    border-width: 1.5px;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.heading-usage {
+    margin-top: 110px;
+    text-align: left;
+    font-family: 'Nord Bold';
+    font-size: 50px;
+    padding-bottom: 60px;
+    color: white;
 }
