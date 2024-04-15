@@ -1,0 +1,323 @@
+.page1 {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.page2 {
+  position: relative;
+  background-color: #1c1c1c;
+  display: flex;
+  height: 100vh;
+}
+
+.page3 {
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+
+.page4 {
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+
+.gradient {
+  height: 100vh;
+  background-image: linear-gradient(
+            to bottom,
+            rgba(28, 28, 28,1),
+            rgba(28, 28, 28, 0.514),
+            rgba(0,0,0,0),
+            rgba(0,0,0,0),
+            rgba(0,0,0,0)
+         );
+  z-index: 3;
+}
+
+.bg-pg4 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/images/bg-pg4(2).jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/images/test.png");
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* img {
+    height:100vh;
+    width:;
+    align-items: center;
+    object-fit: cover;
+} */
+
+.data {
+  color: black;
+  z-index: 100;
+}
+
+.title {
+  width: fit-content;
+  color: #ffffff;
+  font-family: "NokiaExpanded Bold";
+  font-size: 95px;
+  text-align: center;
+  padding-top: 40vh;
+  letter-spacing: 5px;
+}
+
+.tagLine {
+  font-family: "Nord Book";
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+}
+.credit {
+  color: white;
+  font-family: "Just Sans";
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  top: 31%;
+}
+
+.nasa-logo {
+  display: flex;
+  position: relative;
+  top: 27%;
+  scale: 20%;
+}
+
+.team_logo {
+  margin-top: 1.7rem;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.team_logo2 {
+  position: absolute;
+  bottom: 1.3rem;
+  left: 1.3rem;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 40.5%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-track > .image {
+  position: relative;
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img1 {
+  border-radius: 10px;
+  z-index: -1;
+  position: absolute;
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  filter: brightness(.6);
+  /* background-image: url("https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-size: cover;
+    background-position: 100% center;
+    background-repeat: no-repeat; */
+}
+
+.mod-name {
+    font-family: "Noir Pro Regular";
+    font-size: 2rem;
+    color: white;
+    margin: auto;
+    text-align: center;
+    
+    /* vertical-align: middle;
+    line-height: 56vmin; */
+}
+
+.glass-pg4 {
+  margin-top: 50vh;
+  margin-left: 7vw;
+  width: 50%;
+  height: 25vh;
+  position: absolute;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.16);
+  border-top: 2px solid rgba(225, 225, 225, 0.3);
+  border-left: 2px solid rgba(225, 225, 225, 0.1);
+  border-right: 1px solid rgba(225, 225, 225, 0.2);
+  border-bottom: 1.5px solid rgba(225, 225, 225, 0.1);
+}
+
+.about-us {
+  margin-left: 7vw;
+  margin-top: 17vh;
+  color: white;
+  width: fit-content;
+  font-family: 'Noir Pro Bold';
+  font-size: 3rem;
+  float: left;
+}
+
+
+.desc {
+  text-align: justify;
+  position: absolute;
+  margin-top: 25vh;
+  margin-left: 7vw;
+  color: white;
+  width: 45%;
+  font-family: "Just Sans Light";
+  font-size: 1.15rem;
+}
+
+.our-team-tag {
+  font-family: 'Noir Pro Medium';
+  text-transform: uppercase;
+  color: white;
+  font-size:30px;
+  margin-left: 30px;
+  margin-top: 14px;
+}
+
+.line-pg-about-us {
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 225px;
+  position: absolute;
+  height: 1px;
+  width: 15vw;
+
+}
+
+.team-members {
+  margin-left: 2vw;
+  position: absolute;
+  font-family: 'Noir Pro Medium';
+  font-size: 1.3rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap:5vw;
+  grid-template-rows: 80px;
+  row-gap: 10px;
+  color: white;
+  text-transform: uppercase;
+
+}
+
+.team-members p p {
+font-family: 'Noir Pro Light';
+font-size: 16px;
+text-align: center;
+text-transform: capitalize;
+}
+
+@media screen and (min-width: 700px) and (max-width: 930px) {
+  .tagLine {
+    font-size: 20px;
+  }
+
+  .title {
+    vertical-align: middle;
+    font-size: 70px;
+  }
+
+  .credit {
+    top: 30%;
+  }
+
+  .nasa-logo {
+    top: 27%;
+    scale: 15%;
+  }
+}
+
+@media screen and (min-width: 610px) and (max-width: 700px) {
+  .tagLine {
+    font-size: 20px;
+  }
+
+  .title {
+    vertical-align: middle;
+    font-size: 60px;
+  }
+
+  .credit {
+    top: 30%;
+  }
+
+  .nasa-logo {
+    top: 27%;
+    scale: 15%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 610px) {
+  .tagLine {
+    font-size: 20px;
+  }
+
+  .title {
+    vertical-align: middle;
+    font-size: 40px;
+  }
+
+  .credit {
+    top: 30%;
+  }
+
+  .nasa-logo {
+    top: 27%;
+    scale: 15%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tagLine {
+    font-size: 20px;
+  }
+
+  .title {
+    vertical-align: middle;
+    font-size: 35px;
+  }
+
+  .credit {
+    top: 30%;
+  }
+
+  .nasa-logo {
+    top: 27%;
+    scale: 15%;
+  }
+}

@@ -1,0 +1,67 @@
+html body {
+  background-color: rgb(51, 51, 51);
+}
+
+.profile {
+    background-color: #333; /* Dark grey background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #fff; /* White text color */
+  }
+  
+
+.title-pg  {
+  margin-top: 10vh;
+  font-family: 'Nord Medium';
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+}  
+
+  .apod-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); Adjust grid size as needed */
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    margin-top: 20px;
+    font-family: 
+  }
+  
+  .apod-card {
+    font-family: "Just Sans";
+    height: 400px;
+    width: 400px;
+    background-color: #444; /* Slightly darker background for cards */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden; /* Hide image overflow */
+    position: relative;
+  }
+  
+  .apod-card img {
+    width: 100%;
+    height: 250px; /* Adjust image height as needed */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Rounded top corners for image */
+    position: relative;
+    z-index: 2; /* Ensure image is above bottom text */
+  }
+  
+  .apod-card h2 {
+    margin-top: 10px;
+    font-weight: normal;
+    font-family: "Just Sans";
+  }
+  
+  .apod-card p {
+    text-align: justifygit;
+    margin-top: 5px;
+    font-size: 0.9rem; /* Slightly smaller font for date and copyright */
+  }
+  
+  .apod-card h2 {
+    padding-bottom: 10px;
+  }

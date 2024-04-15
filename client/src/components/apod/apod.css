@@ -1,0 +1,153 @@
+html {
+    background-color: #1c1c1c;
+}
+.pg-name {
+    margin-top: 5vh;
+    margin-left: 60px;
+    float: left;
+    width: 180px;
+    font-family: 'Noir Pro Medium';
+    color: white;
+    font-size: 16px;
+}
+.apod {
+    background-color: #1c1c1c;
+    min-height: 100vh;
+}
+
+
+
+.tagline {
+    float: right;
+    margin-right: 3rem;
+    margin-top: 5vh;
+    right: 2rem;
+    color: white;
+    font-family: 'Noir Pro Light';
+}
+
+.page-frame {
+    
+}
+
+.date-inst {
+
+    margin-left: 60px;
+    position: absolute;
+    margin-top: 18vh;
+    font-family: 'Noir Pro Medium';
+    color: white;
+    
+}
+
+.date-picker {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 18vh;
+    transform: translateX(-40px);
+    color: white;
+    background-color: #1c1c1c;
+    border-width: 0px;
+    font-family: 'Noir Pro Medium';
+}
+
+input::-webkit-calendar-picker-indicator {
+    filter: invert(1)
+}
+
+input::-webkit-calendar-picker-indicator:hover {
+    cursor: pointer;
+}
+
+input ::-webkit-calendar-picker-indicator:active {
+    border-color: #1c1c1c;
+}
+
+.fetch-btn {
+    margin-left: 1vw;
+    font-size: 1rem;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: 'Noir Pro Medium';
+}
+
+.img-frame {
+    position: relative;
+    float: right;
+    margin-top: -46vh;
+    margin-right: 5.5vw;
+    margin-bottom: 3vh;
+    display: flex;
+    align-items: center;
+    width: 800px;
+    border-radius: 20px;
+    border-top: 2px solid rgba(225, 225, 225, 0.3);
+    border-left: 2px solid rgba(225, 225, 225, 0.1);
+    border-right: 1px solid rgba(225, 225, 225, 0.2);
+    border-bottom: 1.5px solid rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+.img-frame img {
+    border-radius: inherit;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 760px;
+}
+
+.img-name {
+    margin-top: 6vh;
+    margin-left: 60px;
+    color: white;
+    font-family: 'Noir Pro Medium';
+    font-size: 5rem;
+}
+
+
+
+.text-explaination {
+    padding: 2rem;
+}
+
+.explaination {
+    width: 40% ;
+    line-height: 30px;
+    text-align: justify;
+    border-radius: 20px;
+    margin-top:1vh ;
+    margin-left: 4vw;
+    color: white;
+    font-family: 'Noir Pro Light';
+    border-top: 2px solid rgba(225, 225, 225, 0.3);
+    border-left: 2px solid rgba(225, 225, 225, 0.1);
+    border-right: 1px solid rgba(225, 225, 225, 0.2);
+    border-bottom: 1.5px solid rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.16);
+}
+.explaination p {
+    font-family: 'Noir Pro Light';
+}
+
+.fav-btn {
+    margin-top: 2vh;
+    margin-left: 39vh;
+    margin-bottom: 3vh;
+    border-radius: 5px;
+    font-family: 'Noir Pro Light';
+    font-size: 1.3rem;
+    color: white;
+    border-top: 2px solid rgba(225, 225, 225, 0.3);
+    border-left: 2px solid rgba(225, 225, 225, 0.1);
+    border-right: 1px solid rgba(225, 225, 225, 0.2);
+    border-bottom: 1.5px solid rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+.date {
+    color: white;
+    font-family: 'Noir Pro Light';
+}

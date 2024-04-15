@@ -3,11 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/inter": "^5.0.17",
+    "@maptiler/sdk": "^1.2.1",
+    "@mui/joy": "^5.0.0-beta.31",
+    "@mui/material": "^5.15.13",
+    "@nextui-org/react": "^2.2.10",
+    "@reduxjs/toolkit": "^2.2.2",
     "@testing-library/user-event": "^13.5.0",
+    "@types/react-transition-group": "^4.4.10",
+    "axios": "^1.6.8",
+    "debounce": "^2.0.0",
+    "framer-motion": "^11.0.18",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -34,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.2"
   }
 }
