@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import './App.css';
 import Nasa_logo from './assets/images/Nasa Logo.png';
-import team_logo from './assets/images/pixellabs_white 1.png';
 import React from "react";
 import { useState , useLayoutEffect } from "react";
 import { useRef } from "react";
@@ -62,7 +61,7 @@ useLayoutEffect(() =>{
     document.removeEventListener("mousedown", handle)
   }
 
-  console.log(nextPercentage);   
+
 })
 
   return {mouseX , mouseXDown, ref, nextPercentage};
@@ -70,8 +69,8 @@ useLayoutEffect(() =>{
 }
 
 
-function Home({scrollRef}) {
-  const {mouseXDown,ref, nextPercentage} = useMouse();
+function Home({modulesRef, aboutUsRef}) {
+  const {ref} = useMouse();
   return (
     <div className="Home">
       {/* <NavbarJD/> */}
@@ -87,7 +86,7 @@ function Home({scrollRef}) {
         </div>
       </section>
 
-      <section className="page2">
+      <section className="page2" id="modulesPage">
         <div id="image-track" ref={ref}>
         <div className="image">
          <img className="img1" src={apod} draggable="false" />
@@ -133,7 +132,7 @@ function Home({scrollRef}) {
         </div>
       </section>
 
-      <section className='page4'>
+      <section className='page4' id="aboutUsPage">
         <div className='bg-pg4'>
           <div className="gradient">
             <div className="about-us">ABOUT US</div>

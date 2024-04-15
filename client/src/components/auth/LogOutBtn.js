@@ -17,7 +17,7 @@ const {getLoggedIn} = useContext(AuthContext);
     navigate("/");
 
     }
-  return <button className='logout' onClick={LogOut}>LogOut</button>
+  return <button className='logout' onClick={LogOut}>Log Out</button>
   
 };
 

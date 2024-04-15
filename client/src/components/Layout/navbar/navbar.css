@@ -23,7 +23,7 @@ a {
     align-content: center;
     height: fit-content;
     color: white;
-    width: 500px;
+    width: 600px;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.16);
 }

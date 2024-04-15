@@ -64,6 +64,9 @@ function GravityAssist() {
           <button className='gravity-btn'>Calculate</button>
         </div>
       </section>
+      <section className='section-pg2'>
+        
+      </section>
       <h1>Gravity Assist Calculator</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">

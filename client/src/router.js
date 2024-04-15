@@ -17,13 +17,13 @@ import GravityAssist from "./components/gravity/GravityAssist";
 
 function Router() {
   const { loggedIn } = useContext(AuthContext);
-  const scrollRef = useRef(null);
-
+  
+  
   return (
     <BrowserRouter>
-      <NavbarJD scrollRef={scrollRef}/>
+      <NavbarJD />
             <Routes>
-                <Route exact path="/" element={<Home scrollRef={scrollRef}/>} />
+                <Route exact path="/" element={<Home />} />
                 <Route path="/Apod" element={<Apod />} />
                 <Route path="/EonetMain" element={<MainPage />} />
                 <Route path="/WildFirePage" element={<WildFirePage />} />

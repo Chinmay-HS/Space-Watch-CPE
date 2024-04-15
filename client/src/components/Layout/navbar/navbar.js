@@ -1,16 +1,25 @@
 import React, { useState, useContext } from "react";
 import "./navbar.css";
 import MenuLogo from "./../../../assets/images/more.png";
-import team_logo from "./../../../assets/images/pixellabs_white 1.png";
+
 
 import { Link } from "react-router-dom";
 import AuthContext from "../../../context/AuthContext";
 import LogOutBtn from "../../auth/LogOutBtn";
+import './../../../Home';
 
 function NavbarJD() {
   const [toggle, setToggle] = useState(false);
   const { loggedIn } = useContext(AuthContext);
   console.log(loggedIn);
+
+  const scrollToSection = (ref) => {
+    const section=document.getElementById(ref);
+    if(section){
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+  };
 
   return (
     <div>
@@ -29,6 +38,8 @@ function NavbarJD() {
           {loggedIn === true && (
             <>
               <Link to="/profile">Profile</Link>
+              <a href="#modulesPage" onClick={scrollToSection("modulesPage")}>Modules</a>
+              <a href="#aboutUsPage" onClick={scrollToSection("aboutUsPage")}>About us</a>
               <LogOutBtn />
             </>
           )}
