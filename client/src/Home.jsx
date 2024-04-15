@@ -10,6 +10,7 @@ import MarsRover from './assets/images/mars-rover.png'
 import eonet from './assets/images/eonet.jpg'
 import celestialChoreo from './assets/images/celestial-choreography.jpg'
 import apod from './assets/images/apod.jpg'
+import gravity from './../src/assets/images/gravity.jpg'
 
 
 
@@ -48,7 +49,7 @@ useLayoutEffect(() =>{
     setMaxDelta(window.innerWidth/2);
     setPercentage((mouseDelta/maxDelta)*-100);
     let nextPercentageUnconstrained = parseFloat(prevPercentage)+ percentage;
-    setNextPercentage(Math.max(Math.min(nextPercentageUnconstrained , 0), -81.5));
+    setNextPercentage(Math.max(Math.min(nextPercentageUnconstrained , 0), -84));
     // setPercentage(nextPercentage); 
     //nextPercentage = Math.max(Math.min(parseFloat(prevPercentage)+ percentage, 0), -100);
     
@@ -114,6 +115,13 @@ function Home({scrollRef}) {
           <a href="/EonetMain" target="_blank" rel="noopener noreferrer" draggable="false">
               <h1 className="mod-name">EARTH OBSERVATORY NATURAL EVENT TRACKER</h1>
           </a>
+        </div>
+
+        <div className="image">
+          <img className="img1" src={gravity} draggable="false" />
+           <a href="/GravityAssist" target="_blank" rel="noopener noreferrer" draggable="false">
+             <h1 className="mod-name">GRAVITY ASSIST</h1>
+           </a>
         </div>
 
         <div className="image">

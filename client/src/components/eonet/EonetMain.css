@@ -63,3 +63,7 @@
     display: flex;
     gap: 1rem;
 }
+
+.map-eonet {
+    height: 100vh;
+}

@@ -37,8 +37,8 @@ code {
 }
 
 @font-face {
-  font-family: 'Noir Pro Light';
-  src: local('NoirPro'), url('./assets/Fonts/noir-pro-2023-11-27-05-25-58-utc/NoirPro-Light.otf')
+  font-family: 'Noir Pro Regular';
+  src: local('NoirPro'), url('./assets/Fonts/noir-pro-2023-11-27-05-25-58-utc/NoirPro-Regular.otf')
   format('opentype');
 }
 
@@ -62,15 +62,19 @@ code {
 
 @font-face {
   font-family: 'Just Sans Light';
-  font-weight: 2px;
   src: url('./assets/Fonts/just-sans-clean-modern-minimal-geometric-typeface-2023-11-27-04-59-22-utc/OTFs/JUST\ Sans\ Light.otf')
   format('opentype');
 }
 
 @font-face {
   font-family: 'Just Sans Medium';
-  font-weight: 2px;
   src: url('./assets/Fonts/just-sans-clean-modern-minimal-geometric-typeface-2023-11-27-04-59-22-utc/OTFs/JUST\ Sans\ Medium.otf')
+  format('opentype');
+}
+
+@font-face {
+  font-family: 'Just Sans Regular';
+  src: url('./assets/Fonts/just-sans-clean-modern-minimal-geometric-typeface-2023-11-27-04-59-22-utc/OTFs/JUST\ Sans\ Regular.otf')
   format('opentype');
 }
 

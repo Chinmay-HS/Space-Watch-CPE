@@ -185,31 +185,35 @@ function Apod() {
       <div className="pg-name">ASTRONOMY PICTURE OF THE DAY</div>
       <div className="tagline">DISCOVER THE COSMOS</div>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="date" className="date-inst">
-          Select Date:
-        </label>
-        <input
-          className="date-picker"
-          type="date"
-          id="date"
-          name="date"
-          value={selectedDate}
-          onChange={handleDateChange}
-        />
-        <button className="fetch-btn" type="submit">
-          Fetch APOD
-        </button>
+        <div className="page-frame">
+          <div htmlFor="date" className="date-inst">
+            Select Date:
+          </div>
+          <input
+            className="date-picker"
+            type="date"
+            id="date"
+            name="date"
+            value={selectedDate}
+            onChange={handleDateChange}
+          />
+          <button className="fetch-btn" type="submit">
+            Fetch APOD
+          </button>
+        </div>
       </form>
       {error && <p>{error}</p>}
       {apodData && (
         <div>
+          <div className="img-name">{apodData.title}</div>
+          <div className="explaination">
+            <div className="text-explaination"> 
+              {apodData.explanation} <p>Date: {apodData.date}</p>
+            </div>  
+          </div>
           <div className="img-frame">
             {" "}
             <img src={apodData.url} alt={apodData.title} />{" "}
-          </div>
-          <div className="img-name">{apodData.title}</div>
-          <div className="explaination">
-            {apodData.explanation} <p>Date: {apodData.date}</p>
           </div>
           <button
             className="fav-btn"

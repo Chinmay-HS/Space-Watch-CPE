@@ -1,4 +1,4 @@
-html body{
+html {
     background-color: #1c1c1c;
 }
 .pg-name {
@@ -12,7 +12,7 @@ html body{
 }
 .apod {
     background-color: #1c1c1c;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -26,10 +26,15 @@ html body{
     font-family: 'Noir Pro Light';
 }
 
+.page-frame {
+    
+}
+
 .date-inst {
+
+    margin-left: 60px;
     position: absolute;
     margin-top: 18vh;
-    margin-left: -11vw;
     font-family: 'Noir Pro Medium';
     color: white;
     
@@ -39,7 +44,7 @@ html body{
     text-transform: uppercase;
     font-size: 1rem;
     margin-top: 18vh;
-    margin-left: -5vw;
+    transform: translateX(-40px);
     color: white;
     background-color: #1c1c1c;
     border-width: 0px;
@@ -70,7 +75,7 @@ input ::-webkit-calendar-picker-indicator:active {
 .img-frame {
     position: relative;
     float: right;
-    margin-top: -6.5vh;
+    margin-top: -46vh;
     margin-right: 5.5vw;
     margin-bottom: 3vh;
     display: flex;
@@ -100,13 +105,19 @@ input ::-webkit-calendar-picker-indicator:active {
     font-size: 5rem;
 }
 
+
+
+.text-explaination {
+    padding: 2rem;
+}
+
 .explaination {
     width: 40% ;
     line-height: 30px;
     text-align: justify;
     border-radius: 20px;
-    padding: 2rem;
-    margin-left: 60px;
+    margin-top:1vh ;
+    margin-left: 4vw;
     color: white;
     font-family: 'Noir Pro Light';
     border-top: 2px solid rgba(225, 225, 225, 0.3);

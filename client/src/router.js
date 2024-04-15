@@ -13,6 +13,7 @@ import IcePage from "./components/eonet/IcePage";
 import VolcanoesPage from "./components/eonet/VolcanoesPage";
 import ISSMap from "./components/isstracking/ISSMain";
 import Celestialchoreography from "./components/celestialcheography/celestialchoreography";
+import GravityAssist from "./components/gravity/GravityAssist";
 
 function Router() {
   const { loggedIn } = useContext(AuthContext);
@@ -30,6 +31,7 @@ function Router() {
                 <Route path="/VolcanoesPage" element={<VolcanoesPage />} />
                 <Route path="/ISSMain" element={<ISSMap />} />
                 <Route path="/celestialchoreography" element={<Celestialchoreography />} />
+                <Route path="/GravityAssist" element={<GravityAssist />} />
 
 
         {loggedIn === false && (
