@@ -14,6 +14,7 @@ In this section, we will provide a concise overview of the core functions of our
 
 The 'Router' component is the main entry point of the application. It imports the necessary React and React Router DOM modules, as well as the various components used throughout the application. The 'Router' component initializes the 'BrowserRouter' component, which provides the routing functionality for the application. Inside the 'BrowserRouter', the 'Routes' component is rendered, which defines thedifferent routes and their corresponding components.
 
+![SS1](https://github.com/Chinmay-HS/Space-Watch-CPE/blob/47d92cdf392385895ca22ea37fdc1b5382a26b3b/SS2.jpg)
 
 The routes include:
 ⁃ Home: Renders the 'Home' component with the 'scrollRef" prop.
@@ -62,7 +63,7 @@ Long-term Goals:
 incorporate cutting-edge features and data sources into the SpaceWatch platform.
 
 ## Screenshots
-1. Figma Wireframing 
-![Screenshot 2024-06-15 162134](https://github.com/vighnesh-bcoj/boeing-777_mat/assets/69509265/26220ce4-e0bd-4ef1-a323-f4a03ea6fac1)
+Figma Wireframing 
+![SS2](https://github.com/Chinmay-HS/Space-Watch-CPE/blob/47d92cdf392385895ca22ea37fdc1b5382a26b3b/SS1.png)
 
 
